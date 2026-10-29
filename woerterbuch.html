@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>单词表 · 宝可德语</title>
+  <meta name="description" content="按课号整理的全部德语生词，可以搜索、筛选、点读。">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/lesson.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="woerterbuch">
+  <a class="visually-hidden" href="#main">跳到主要内容</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-hero">
+      <div id="pageScene" aria-hidden="true"></div>
+      <div class="page-hero-inner">
+        <p class="eyebrow">Wörterbuch · 单词表</p>
+        <h1>所有学过的词</h1>
+        <p class="lead">按课号排好。忘记某个词在哪一课出现，就来这里搜一下。名词记得连冠词一起背：der、die、das。</p>
+      </div>
+    </header>
+    <div class="page-main">
+      <div class="container">
+        <div class="glossary-toolbar">
+          <input type="search" id="wordSearch" placeholder="搜索德语、中文或课号……" aria-label="搜索单词" autocomplete="off">
+          <select id="lessonFilter" aria-label="按课筛选"><option value="all">全部课</option></select>
+          <select id="posFilter" aria-label="按词性筛选"><option value="all">全部词性</option></select>
+          <span class="count-pill" id="wordCount">正在翻书……</span>
+          <div class="lesson-chips" id="lessonChips"></div>
+        </div>
+        <div class="loading-bar" id="loadBar" style="display:none"><i></i></div>
+        <div class="word-rows" id="wordRows"></div>
+        <div class="empty-state" id="emptyState" style="display:none">
+          <b>没有找到这个词</b>
+          <span>换个写法试试？比如只输入词根，或者按课号筛选。</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/app.js" defer></script>
+  <script src="js/woerterbuch.js" defer></script>
+</body>
+</html>
