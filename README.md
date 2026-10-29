@@ -95,6 +95,13 @@ node tools/fetch-fonts.mjs      # 若 tools/fonts-src 里没有字体源文件
 python tools/subset-fonts.py
 ```
 
+## 部署到 GitHub Pages
+
+本仓库的 `main` 分支根目录就是网站本体（根目录有 `.nojekyll`，跳过 Jekyll 处理），GitHub Pages 直接从 `/` 发布：
+
+- 线上地址：https://arcarlight.github.io/Deutsch-learning-flygonish/
+- 更新方式：把修改后的文件覆盖到仓库根目录，`git add / commit / push`，Pages 会自动重新构建（通常 1 分钟内）。
+
 ## 素材与致谢
 
 - 宝可梦头像：[PMD Sprite Repository](https://sprites.pmdcollab.org/)（PMDCollab），本项目仅将其用于非商业同人学习作品，请遵守原站使用条款。
