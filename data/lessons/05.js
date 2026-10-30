@@ -82,6 +82,9 @@ window.LESSON = {
         { n: "图画到一半，米拉的橡皮从桌上滚下去，一直滚到桌子底下。" },
         { who: "mira", emo: "sad", de: "Oh! Mein Radiergummi!", zh: "啊！我的橡皮！" },
         { who: "hero", emo: "normal", de: "Wo ist er?", zh: "它在哪里？" },
+        { n: "靠窗的莉安娜没有说话，只是抬起手指了指桌子底下。" },
+        { who: "snivy", emo: "normal", de: "Dort.", zh: "那里。" },
+        { who: "hero", emo: "happy", de: "Danke, Liane!", zh: "谢谢你，莉安娜！" },
         { who: "mira", emo: "normal", de: "Dort! Unter dem Tisch.", zh: "在那儿！桌子底下。" },
         { who: "hero", emo: "happy", de: "Hier, bitte! Dein Radiergummi.", zh: "给，请拿好！你的橡皮。" },
         { who: "mira", emo: "happy", de: "Danke, {{name}}!", zh: "谢谢你，{{name}}！" },
@@ -136,6 +139,7 @@ window.LESSON = {
       notes: [
         "只有阳性名词的冠词在第四格会变：der → einen，kein → keinen。die 和 das 看起来和第一格一样。",
         "复数名词前没有不定冠词，肯定句直接说 Ich habe Hefte.，否定句说 Ich habe keine Hefte.",
+        "课文里会出现 **mein / dein**（我的 / 你的）：mein Stift / meine Schere / meinen Stift。先认第一格和第四格，详细内容看「基础小抄」，第三格以后再讲。",
         "课文里的 **unter dem Tisch**（在桌子底下）是固定说法，先整体记住；第三格以后再学。"
       ],
       examples: [

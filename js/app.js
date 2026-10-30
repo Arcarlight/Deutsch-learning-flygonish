@@ -77,6 +77,13 @@
       role: "爱恶作剧的风妖精，机灵，捉弄完又会心虚地用花道歉",
       quote: "Hehe. Das war nur ein kleiner Scherz!",
       quoteZh: "嘿嘿。只是个小玩笑啦！"
+    },
+    snivy: {
+      id: "snivy", name: "莉安娜", de: "Liane", species: "藤藤蛇", speciesDe: "Serpifeu",
+      img: "snivy", color: "#5f8b4b", soft: "#e9f0df", age: "10 岁",
+      role: "话很少、什么都看在眼里的藤藤蛇，和利希特老师一起生活",
+      quote: "Ich weiß.",
+      quoteZh: "我知道。"
     }
   };
 
@@ -85,7 +92,7 @@
     { id: 1, title: "Hallo, Welt!", zh: "醒来的早晨", scene: "forest", accent: "#6d9c5c", beat: "在森林边醒来，遇见背着篮子的欧亚西莉亚。" },
     { id: 2, title: "Das Haus am Waldrand", zh: "林边的家", scene: "house", accent: "#c5764f", beat: "认识阿特拉斯，参观这栋有花园和工坊的木屋。" },
     { id: 3, title: "Zahlen und Alter", zh: "早餐桌", scene: "dawn", accent: "#d8a24a", beat: "数宝可币、学数字，被问起自己几岁。" },
-    { id: 4, title: "Der erste Schultag", zh: "上学的第一天", scene: "classroom", accent: "#4f72ad", beat: "利希特老师的教室，还有两个新同学。" },
+    { id: 4, title: "Der erste Schultag", zh: "上学的第一天", scene: "classroom", accent: "#4f72ad", beat: "利希特老师的教室，还有米拉、阿尔科，和窗边的莉安娜。" },
     { id: 5, title: "Im Klassenzimmer", zh: "借文具", scene: "classroom", accent: "#6f975b", beat: "画画课上没有笔，米拉悄悄把自己的递过来。" },
     { id: 6, title: "Mittagessen bei Oasilia", zh: "午餐", scene: "house", accent: "#c98f3f", beat: "文柚果沙拉、面包，和不请自来的艾米。" },
     { id: 7, title: "Auf dem Markt", zh: "集市", scene: "market", accent: "#b7524d", beat: "周末的集市，第一次自己用宝可币买东西。" },
@@ -351,35 +358,39 @@
     if (kind === "classroom") {
       art = `
         <rect width="1440" height="500" fill="url(#${uid}sky)"/>
-        <rect y="0" width="1440" height="88" fill="#e6c894" opacity=".55"/>
+        <circle cx="1090" cy="112" r="140" fill="url(#${uid}glow)"/>
+        <circle cx="1090" cy="112" r="40" fill="${P.sun}"/>
+        ${clouds(P.cloud, 96, 1)}
+        <path d="M0 330 q 260 -36 520 -6 q 260 30 520 -8 q 220 -30 400 6 L1440 500 L0 500 Z" fill="${P.far}"/>
+        <path d="M0 392 q 320 -26 640 2 q 320 26 800 -10 L1440 500 L0 500 Z" fill="${P.mid}"/>
+        ${tree(150, 414, 180, "#5f8257", "round")}
+        ${tree(292, 424, 128, "#6b8f60", "round")}
+        ${tree(1330, 420, 190, "#54784e", "pine")}
+        <rect y="410" width="1440" height="90" fill="${P.ground}"/>
         <g>
-          <rect x="820" y="96" width="420" height="260" rx="14" fill="#f9efd8" stroke="#8a6a45" stroke-width="10"/>
-          <rect x="836" y="112" width="388" height="228" fill="#cfe7d8"/>
-          <path d="M836 300 q 120 -58 200 -22 q 110 48 188 6 L1224 340 L836 340 Z" fill="#8fb27e"/>
-          <circle cx="1160" cy="160" r="30" fill="#ffe09a" opacity=".9"/>
-          <rect x="1020" y="112" width="10" height="228" fill="#8a6a45"/>
-          <rect x="836" y="222" width="388" height="10" fill="#8a6a45"/>
+          <rect x="760" y="230" width="480" height="196" rx="5" fill="#ead6b0"/>
+          <polygon points="738,236 1000,116 1262,236" fill="#b7524d"/>
+          <polygon points="738,236 1000,116 1262,236" fill="none" stroke="#8d3a36" stroke-width="6" opacity=".3"/>
+          <rect x="982" y="128" width="38" height="70" fill="#8a6a45"/>
+          <circle cx="1001" cy="154" r="15" fill="#e6b567"/>
+          <rect x="790" y="290" width="92" height="76" rx="4" fill="#bfe3e2" stroke="#7a5c3a" stroke-width="6"/>
+          <rect x="902" y="290" width="92" height="76" rx="4" fill="#bfe3e2" stroke="#7a5c3a" stroke-width="6"/>
+          <rect x="1044" y="290" width="150" height="76" rx="4" fill="#bfe3e2" stroke="#7a5c3a" stroke-width="6"/>
+          <rect x="790" y="290" width="6" height="76" fill="#7a5c3a" opacity=".35"/>
+          <rect x="1044" y="290" width="6" height="76" fill="#7a5c3a" opacity=".35"/>
+          <rect x="972" y="318" width="74" height="108" rx="4" fill="#8a6a45"/>
+          <circle cx="1030" cy="372" r="4" fill="#e6b567"/>
+          <rect x="846" y="248" width="210" height="30" rx="6" fill="#f3e3c3" stroke="#8a6a45" stroke-width="4"/>
+          <rect x="744" y="410" width="512" height="14" rx="4" fill="#c9a97c"/>
         </g>
-        <g>
-          <rect x="120" y="118" width="420" height="230" rx="10" fill="#2f5049" stroke="#7a5c3a" stroke-width="10"/>
-          <g stroke="#dcece7" stroke-width="3" opacity=".5" stroke-linecap="round">
-            <path d="M160 168 h 300"/><path d="M160 202 h 240"/><path d="M160 236 h 280"/><path d="M160 270 h 190"/>
-          </g>
-          <rect x="150" y="322" width="360" height="18" rx="6" fill="#7a5c3a"/>
+        <path d="M1000 424 q -120 30 -260 76" stroke="#d9c08a" stroke-width="26" fill="none" opacity=".7" stroke-linecap="round"/>
+        <g stroke="#8a6a45" stroke-width="4" fill="none" opacity=".55">
+          <path d="M80 440 h 300"/><path d="M110 410 v 74"/><path d="M210 410 v 74"/><path d="M310 410 v 74"/>
         </g>
-        <g>
-          <rect x="100" y="356" width="1240" height="12" fill="#8a6a45" opacity=".5"/>
-          <rect x="180" y="368" width="300" height="18" rx="8" fill="#a9825a"/>
-          <rect x="220" y="386" width="14" height="86" fill="#8a6a45"/>
-          <rect x="426" y="386" width="14" height="86" fill="#8a6a45"/>
-          <rect x="960" y="368" width="300" height="18" rx="8" fill="#a9825a"/>
-          <rect x="1000" y="386" width="14" height="86" fill="#8a6a45"/>
-          <rect x="1206" y="386" width="14" height="86" fill="#8a6a45"/>
-          <rect x="160" y="386" width="70" height="52" rx="6" fill="#c9bda2"/>
-          <circle cx="300" cy="380" r="14" fill="#c5764f"/>
-          <rect x="1010" y="384" width="52" height="60" rx="5" fill="#7a9a5b"/>
+        <g fill="#e8b86a">
+          <circle cx="520" cy="466" r="6"/><circle cx="548" cy="458" r="5"/><circle cx="1270" cy="454" r="6"/><circle cx="1300" cy="466" r="5"/>
         </g>
-        <rect y="464" width="1440" height="36" fill="#c9a97c"/>`;
+        ${grassTufts("#5e874f", 494)}`;
     } else if (kind === "market") {
       art = `
         <rect width="1440" height="500" fill="url(#${uid}sky)"/>
@@ -608,6 +619,7 @@
           </a>
           <nav class="nav" aria-label="主导航">
             <a href="index.html#kurs" ${page === "home" ? 'aria-current="page"' : ""}>课程</a>
+            <a href="grundlagen.html" ${page === "grundlagen" ? 'aria-current="page"' : ""}>基础</a>
             <a href="aussprache.html" ${page === "aussprache" ? 'aria-current="page"' : ""}>发音</a>
             <a href="charaktere.html" ${page === "charaktere" ? 'aria-current="page"' : ""}>角色</a>
             <a href="woerterbuch.html" ${page === "woerterbuch" ? 'aria-current="page"' : ""}>词表</a>
@@ -653,7 +665,7 @@
           </div>
           <div class="foot-col">
             <p>学习进度只保存在这台设备的浏览器里，不联网、不上传。</p>
-            <p><a href="index.html">回到首页</a> · <a href="aussprache.html">发音规则</a> · <a href="woerterbuch.html">全部单词</a></p>
+            <p><a href="index.html">回到首页</a> · <a href="grundlagen.html">基础小抄</a> · <a href="aussprache.html">发音规则</a> · <a href="woerterbuch.html">全部单词</a></p>
           </div>
         </div>
       </footer>`;

@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 
-const WHO = ["hero", "oasilia", "atlas", "licht", "mira", "arko", "emi", "wiss"];
+const WHO = ["hero", "oasilia", "atlas", "licht", "mira", "arko", "emi", "wiss", "snivy"];
 const EMO = ["normal", "happy", "sad", "angry", "surprised", "crying", "sigh", "stunned", "worried"];
 const SCENES = ["dawn", "forest", "house", "classroom", "market", "rain", "sea", "hill", "night"];
 const EX = ["choice", "fill", "order", "match", "listen", "truefalse"];

@@ -10,7 +10,7 @@ window.LESSON = {
     "掌握动词第二位的语序",
     "能问 Bist du …? 这类一般疑问句"
   ],
-  friend: ["licht", "mira", "arko"],
+  friend: ["licht", "mira", "arko", "snivy"],
   warmup: {
     title: "Lernen wir zusammen?",
     lead: "第一次进教室之前，老师先问你两句话。",
@@ -82,6 +82,9 @@ window.LESSON = {
         { who: "mira", emo: "normal", de: "Hallo … ich bin Mira.", zh: "你好……我是米拉。" },
         { who: "mira", emo: "normal", de: "Hier ist ein Buch. Wir lesen.", zh: "这里有一本书。我们读书。" },
         { who: "hero", emo: "happy", de: "Danke.", zh: "谢谢。" },
+        { n: "教室最后一排靠窗的位置，坐着一只藤藤蛇。她一直没说话，只是安静地看着大家。" },
+        { who: "licht", emo: "normal", de: "Und das ist Liane. Sie ist auch in unserer Klasse.", zh: "还有这位，莉安娜。她也在我们班。" },
+        { who: "snivy", emo: "normal", de: "…Hallo.", zh: "……你好。" },
         { n: "忽然窗外「咚」的一声，树叶哗啦啦地响。一只始祖小鸟从树上掉进了灌木丛，又从里面爬出来，翅膀上还挂着叶子。" },
         { who: "licht", emo: "surprised", de: "Was ist das?", zh: "那是什么？" },
         { who: "mira", emo: "surprised", de: "Dort! Das ist Arko!", zh: "那边！是阿尔科！" },

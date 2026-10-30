@@ -6,7 +6,7 @@
 
 ![首页](preview/home.png)
 
-你睁开眼，发现自己变成了一只宝可梦。森林边住着 17 岁的沙漠蜻蜓**欧亚西莉亚**和 20 岁的暴飞龙**阿特拉斯**；白天你要去稳重的电龙**利希特老师**那里上课，同桌是害羞的**米拉**（土龙弟弟），还有总想飞的**阿尔科**（始祖小鸟）、自来熟的**艾米**（电飞鼠）和爱恶作剧的**薇丝**（风妖精）。
+你睁开眼，发现自己变成了一只宝可梦。森林边住着 17 岁的沙漠蜻蜓**欧亚西莉亚**和 20 岁的暴飞龙**阿特拉斯**；白天你要去稳重的电龙**利希特老师**那里上课，同桌是害羞的**米拉**（土龙弟弟），还有总想飞的**阿尔科**（始祖小鸟）、自来熟的**艾米**（电飞鼠）、爱恶作剧的**薇丝**（风妖精），以及话很少、什么都看在眼里的**莉安娜**（藤藤蛇）。
 
 一共 12 课，节奏很慢，只讲日常。每课包含：
 
@@ -48,13 +48,14 @@ node tools/serve.mjs 4321 --open
 index.html            首页：世界观、课程地图、选伙伴
 lektion.html?l=1      课文页（1–12 课）
 aussprache.html       发音规则
+grundlagen.html       基础小抄（动词变形 / 物主冠词 / 星期月份 / 课堂用语 / 术语）
 charaktere.html       角色图鉴
 woerterbuch.html      全部单词（搜索/筛选/点读）
-css/                  base / home / lesson / pages
-js/                   app（共享）/ home / lesson / aussprache / charaktere / woerterbuch
+css/                  base / home / lesson / pages / grundlagen
+js/                   app（共享）/ home / lesson / aussprache / grundlagen / charaktere / woerterbuch
 data/lessons/01–12.js 课文数据（每一课一个文件）
 data/characters.js    角色档案
-assets/portraits/     90 张 PMD 头像（10 个角色 × 9 种表情）
+assets/portraits/     99 张 PMD 头像（11 个角色 × 9 种表情）
 assets/fonts/         Fredoka / Nunito / 霞鹜文楷（子集）/ 站酷快乐体（子集）
 assets/img/           宝可币、文柚果图标、favicon
 docs/                 故事圣经、课程大纲、数据格式说明

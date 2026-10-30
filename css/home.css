@@ -229,7 +229,7 @@
 
 /* ---------------- tools ---------------- */
 .tools { padding: 70px 0 90px; }
-.tools-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.tools-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .tool-card {
   display: flex; gap: 16px; align-items: flex-start;
   padding: 22px;

@@ -20,7 +20,7 @@
 
     const hc = A.heroChar();
     const adults = DATA.filter(c => ["oasilia", "atlas", "licht"].includes(c.id));
-    const kids = DATA.filter(c => ["mira", "arko", "emi", "wiss"].includes(c.id));
+    const kids = DATA.filter(c => ["mira", "snivy", "arko", "emi", "wiss"].includes(c.id));
 
     const visited = new Set(A.state.visited);
     const metOasilia = visited.has(1);
@@ -48,7 +48,7 @@
 
       <section style="margin-top:54px">
         <div class="section-head">
-          <div><span class="eyebrow">Die Klasse</span><h2>班上的同学</h2><p>和你差不多大的四个孩子。他们会在不同的课里慢慢出现。</p></div>
+          <div><span class="eyebrow">Die Klasse</span><h2>班上的同学</h2><p>和你差不多大的五个孩子。他们会在不同的课里慢慢出现。</p></div>
         </div>
         <div class="char-grid">${kids.map(c => cardHTML(c)).join("")}</div>
       </section>
@@ -66,10 +66,10 @@
               : `<span style="color:var(--ink-3)">还不认识他们。第 1、2 课会遇见。</span>`}
           </div>
           <div class="relation-card">
-            <div class="rp">${A.portrait("mira", "normal")}${A.portrait("arko", "happy")}${A.portrait("emi", "happy")}${A.portrait("wiss", "normal")}</div>
-            <b>课堂四人组</b><br>
+            <div class="rp">${A.portrait("mira", "normal")}${A.portrait("snivy", "normal")}${A.portrait("arko", "happy")}${A.portrait("emi", "happy")}${A.portrait("wiss", "normal")}</div>
+            <b>课堂五人组</b><br>
             ${metClass
-              ? "米拉安静、阿尔科好动、艾米自来熟、薇丝爱捉弄人。四个人性格差得很远，却总在放学后一起回家。你是第五个。"
+              ? "米拉安静、莉安娜话最少、阿尔科好动、艾米自来熟、薇丝爱捉弄人。五个人性格差得很远，却总在放学后一起回家。你是第六个。"
               : `<span style="color:var(--ink-3)">还不认识班上的同学。第 4 课开始会慢慢见面。</span>`}
           </div>
           <div class="relation-card">

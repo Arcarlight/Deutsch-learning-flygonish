@@ -257,7 +257,7 @@
         <span class="sec-num">03</span>
         <div class="sec-title"><span class="sec-de">Grammatik</span><h2>语法</h2></div>
       </div>
-      <p class="sec-lead">不用一次记住。先看懂，再回课文里找一遍。</p>
+      <p class="sec-lead">不用一次记住。先看懂，再回课文里找一遍。<a href="grundlagen.html" style="color:var(--sea);font-weight:700">术语看不懂？看基础小抄 →</a></p>
       ${L.grammar.map(g => `<article class="grammar-card reveal">
         <h3>${A.esc(g.title)}</h3>
         <div class="grammar-intro">${mdInline(g.intro)}</div>

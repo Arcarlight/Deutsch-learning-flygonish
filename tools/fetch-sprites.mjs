@@ -3,7 +3,7 @@ const base = "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/po
 const chars = {
   torchic: "0255", piplup: "0393", rowlet: "0722",
   flygon: "0330", salamence: "0373", ampharos: "0181",
-  dunsparce: "0206", archen: "0566", emolga: "0587", whimsicott: "0547",
+  dunsparce: "0206", archen: "0566", emolga: "0587", whimsicott: "0547", snivy: "0495",
 };
 const emotions = ["Normal","Happy","Sad","Angry","Surprised","Crying","Sigh","Stunned","Worried"];
 await mkdir("assets/portraits", { recursive: true });

@@ -58,6 +58,7 @@ window.LESSON = {
       subtitle: "下雨了",
       lines: [
         { n: "早上，雨点一直打在教室的窗户上，玻璃上全是水。" },
+        { n: "莉安娜坐在最后一排，安静地看着窗外的雨，偶尔在纸上写点什么。" },
         { who: "licht", emo: "normal", de: "Guten Morgen, Kinder. Heute regnet es.", zh: "早上好，孩子们。今天下雨。" },
         { who: "mira", emo: "normal", de: "Es ist kalt und nass.", zh: "又冷又湿。" },
         { who: "emi", emo: "worried", de: "Der Donner ist laut!", zh: "雷声好响！" },

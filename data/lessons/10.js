@@ -63,6 +63,7 @@ window.LESSON = {
       subtitle: "粉色的围巾",
       lines: [
         { n: "早上，大家走进教室。窗外的树是绿的，叶子也是绿的。" },
+        { n: "莉安娜看了一眼门口，又低头继续看书，好像早就知道会有人来。" },
         { who: "licht", emo: "happy", de: "Guten Morgen! Der Himmel ist blau.", zh: "早上好！天空是蓝色的。" },
         { who: "licht", emo: "normal", de: "Der Baum ist grün, und die Blätter sind grün. Heute lernen wir die Farben.", zh: "树是绿色的，叶子也是绿色的。今天我们来学颜色。" },
         { n: "米拉低着头走进来。她的围巾变成了粉色。" },

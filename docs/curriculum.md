@@ -33,15 +33,15 @@
 **练习重点**：数字听写、年龄问答、复数配对、数字算术。
 
 ## Lektion 4 — Der erste Schultag（上学的第一天）
-**剧情**：Oasilia 送主角去利希特老师的教室。老师尾巴发着柔光，慢慢介绍自己。同桌是害羞的米拉；忽然窗外「咚」一声，阿尔科从树上掉进灌木丛——他又想飞了。大家把他拉起来，主角第一次自我介绍。
-**人物**：Licht、Mira、Arko（首次）
+**剧情**：Oasilia 送主角去利希特老师的教室。老师尾巴发着柔光，慢慢介绍自己。同桌是害羞的米拉；最后一排靠窗坐着话很少的莉安娜（只当普通同学介绍）；忽然窗外「咚」一声，阿尔科从树上掉进灌木丛——他又想飞了。大家把他拉起来，主角第一次自我介绍。
+**人物**：Licht、Mira、Arko（首次）；Liane（首次，先当普通同学）
 **语法**：规则动词现在时变位（lernen, wohnen, spielen, kommen, heißen）；动词第二位；一般疑问句 Bist du …?
 **生词**：die Schule (die Schulen), der Lehrer (die Lehrer), die Klasse (die Klassen), lernen, lesen, schreiben, sprechen, hören, spielen, der Schüler (die Schüler), die Schülerin (die Schülerinnen), das Buch (die Bücher), die Tafel (die Tafeln), zusammen, das Deutsch
 **练习重点**：动词变位填空、语序、自我介绍、听力。
 
 ## Lektion 5 — Im Klassenzimmer（借文具）
-**剧情**：利希特老师让大家画画。主角没有笔，向米拉借；阿尔科递来一支咬过的铅笔。老师教大家说「Ich habe einen Bleistift」。米拉的橡皮滚到桌下，主角帮她捡。
-**人物**：Licht、Mira、Arko
+**剧情**：利希特老师让大家画画。主角没有笔，向米拉借；阿尔科递来一支咬过的铅笔。老师教大家说「Ich habe einen Bleistift」。米拉的橡皮滚到桌下，莉安娜安静地指了指桌子底下，主角帮她捡。
+**人物**：Licht、Mira、Arko；Liane（只有动作和一句「Dort.」）
 **语法**：haben 现在时；第四格不定冠词 einen/eine/ein；否定 kein/keine
 **生词**：haben, der Bleistift (die Bleistifte), der Radiergummi (die Radiergummis), das Heft (die Hefte), das Papier (die Papiere), die Schere (die Scheren), die Lampe (die Lampen), brauchen, geben, nehmen, kein, keine, der Tisch, das Fenster
 **练习重点**：haben 变位、第四格冠词、kein/keine、借东西对话。
@@ -102,3 +102,5 @@
 
 ## 前 12 课之后的预留方向（不要在本期写）
 L13 去邻村送信 / L14 冬雪与节日 / L15 阿特拉斯的工坊 / L16 海边的灯塔。继续保持日常与慢节奏。
+其中 L13 之后可以开始铺莉安娜的线：她也是人类变成的孩子，和主角一样回不去；先给暗示，不要一次揭晓。之后每一课让她多说一两句话。
+L13–L16 之间可以补：物主冠词的完整变化（sein / ihr、第三格）、第三格、星期/月份/课堂用语、规则动词复习；这些在 `grundlagen.html` 里已有简表，课上再逐步展开。
